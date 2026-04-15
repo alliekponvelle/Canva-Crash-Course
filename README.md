@@ -1,9 +1,11 @@
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Canva Crash Course</title>
+  <title>Business Backend and Store Setup</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&family=Manrope:wght@400;500;700;800&display=swap" rel="stylesheet">
@@ -16,6 +18,7 @@
       --purple: #71419b;
       --purple-deep: #29123f;
       --gold: #d7b15c;
+      --gold-deep: #9b7427;
       --red: #b43b4d;
       --green: #368856;
       --line: rgba(113, 65, 155, 0.15);
@@ -121,7 +124,7 @@
       margin-top: 18px;
       font-size: clamp(2.6rem, 7vw, 5rem);
       line-height: 0.96;
-      max-width: 11ch;
+      max-width: 12ch;
     }
 
     .hero p {
@@ -134,8 +137,7 @@
     .hero-grid,
     .grid-2,
     .grid-3,
-    .grid-4,
-    .pdf-gallery {
+    .grid-4 {
       display: grid;
       gap: 16px;
       margin-top: 18px;
@@ -149,7 +151,6 @@
     .grid-2 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
     .grid-3 { grid-template-columns: repeat(3, minmax(0, 1fr)); }
     .grid-4 { grid-template-columns: repeat(4, minmax(0, 1fr)); }
-    .pdf-gallery { grid-template-columns: repeat(2, minmax(0, 1fr)); }
 
     .hero-stat {
       padding: 16px;
@@ -192,44 +193,31 @@
     .lesson-card,
     .template-card,
     .warning-card,
-    .pdf-page {
+    .platform-card {
       background: var(--panel-soft);
       border: 1px solid var(--line);
       border-radius: 22px;
       padding: 18px;
     }
 
-    .lesson-card { border-top: 4px solid var(--purple); }
-    .warning-card { border-top: 4px solid var(--red); }
-    .template-card { border-top: 4px solid var(--green); }
-
-    .pdf-page {
-      padding: 12px;
-      overflow: hidden;
+    .lesson-card,
+    .platform-card {
       border-top: 4px solid var(--purple);
     }
 
-    .pdf-page img {
-      display: block;
-      width: 100%;
-      border-radius: 14px;
-      border: 1px solid rgba(113, 65, 155, 0.14);
+    .warning-card {
+      border-top: 4px solid var(--red);
     }
 
-    .pdf-page span {
-      display: block;
-      margin-top: 10px;
-      color: var(--purple-deep);
-      font-weight: 800;
-      font-size: 0.86rem;
-      text-transform: uppercase;
-      letter-spacing: 0.08em;
+    .template-card {
+      border-top: 4px solid var(--green);
     }
 
     .card h3,
     .lesson-card h3,
     .template-card h3,
-    .warning-card h3 {
+    .warning-card h3,
+    .platform-card h3 {
       font-size: 1.08rem;
       color: var(--purple-deep);
       margin-bottom: 8px;
@@ -323,8 +311,7 @@
       .hero-grid,
       .grid-2,
       .grid-3,
-      .grid-4,
-      .pdf-gallery {
+      .grid-4 {
         grid-template-columns: 1fr;
       }
 
@@ -366,87 +353,51 @@
 <body>
   <div class="page">
     <section class="hero">
-      <span class="eyebrow">Module 7</span>
-      <h1>Canva Crash Course</h1>
-      <p>Learn how to use Canva to create clean social posts, digital products, lead magnets, mockups, thumbnails, and branded content without needing advanced design skills.</p>
+      <span class="eyebrow">Module 4</span>
+      <h1>Business Backend and Store Setup</h1>
+      <p>Build a creator store that is simple on the outside and organized behind the scenes. Learn how to choose a platform, set up payments, add offers, deliver products, connect social traffic, and track what is working.</p>
       <div class="hero-grid">
         <div class="hero-stat">
-          <strong>Create</strong>
-          <span>Build posts, templates, workbooks, covers, and digital products</span>
+          <strong>Set Up</strong>
+          <span>Create the store, bio, products, links, payments, and support path</span>
         </div>
         <div class="hero-stat">
-          <strong>Brand</strong>
-          <span>Use consistent colors, fonts, logos, and layouts</span>
+          <strong>Choose</strong>
+          <span>Know when to use Stan, Beacons, Shopify, or a simple link hub</span>
         </div>
         <div class="hero-stat">
-          <strong>Batch</strong>
-          <span>Make content faster with templates and repeatable systems</span>
+          <strong>Deliver</strong>
+          <span>Make sure buyers receive files, links, confirmation emails, and next steps</span>
         </div>
         <div class="hero-stat">
-          <strong>Export</strong>
-          <span>Download the right file type for social, print, products, or Canva sharing</span>
+          <strong>Improve</strong>
+          <span>Use clicks, views, sales, and placement tests to increase conversions</span>
         </div>
       </div>
     </section>
 
     <section class="section">
-      <div class="section-label">Why It Matters</div>
-      <h2>Design Helps the Offer Feel Real</h2>
-      <p>Canva gives beginners a fast way to make their ideas look professional. Students can create social content, digital downloads, sales graphics, mockups, worksheets, lead magnets, and simple brand assets without learning complicated design software.</p>
-      <div class="quote">The goal is not to make every design fancy. The goal is to make every design clear, readable, branded, and useful.</div>
-    </section>
-
-    <section class="section">
-      <div class="section-label">Course Companion</div>
-      <h2>Canva Crash Course PDF</h2>
-      <p>Use the companion PDF as an extra walkthrough resource while completing this module. Open it alongside the lessons, follow the setup steps, and use it as a quick reference when practicing inside Canva.</p>
+      <div class="section-label">Beginner Basics</div>
+      <h2>Setting Up Your Creator Store</h2>
+      <p>Every creator store needs a few basic things. Your store should be easy to understand in seconds.</p>
       <div class="grid-2">
         <div class="template-card">
-          <h3>Open the PDF</h3>
-          <p>The PDF is stored locally in the main Codex Files folder so it stays with the module.</p>
-          <pre>Canva Crash Course .pdf</pre>
-          <div class="quote"><a href="file:///F:/COdex%20Files/Canva%20Crash%20Course.pdf">Open the Canva Crash Course PDF</a></div>
-        </div>
-        <div class="template-card">
-          <h3>How to Use It</h3>
+          <h3>Quick Store Setup Checklist</h3>
           <ol>
-            <li>Open the PDF before starting Lesson 1.</li>
-            <li>Keep Canva open in another tab.</li>
-            <li>Practice each step instead of only reading.</li>
-            <li>Save one finished design after every major section.</li>
-            <li>Add notes about anything you want to turn into a student worksheet.</li>
+            <li>Create your account.</li>
+            <li>Write a clear bio.</li>
+            <li>Add your first offer.</li>
+            <li>Connect payments.</li>
+            <li>Add your store link to your social bio.</li>
+            <li>Mention your store in your content.</li>
+            <li>Keep the layout simple.</li>
           </ol>
         </div>
-      </div>
-    </section>
-
-    <section class="section">
-      <div class="section-label">PDF Preview</div>
-      <h2>Visual Pages From the Canva Crash Course</h2>
-      <p>These page images were pulled from the companion PDF so students can preview the course visually inside this module.</p>
-      <div class="pdf-gallery">
-        <div class="pdf-page"><img src="assets/canva-crash-course-pdf/canva-pdf-page-01.jpg" alt="Canva Crash Course PDF page 1"><span>Page 1</span></div>
-        <div class="pdf-page"><img src="assets/canva-crash-course-pdf/canva-pdf-page-02.jpg" alt="Canva Crash Course PDF page 2"><span>Page 2</span></div>
-        <div class="pdf-page"><img src="assets/canva-crash-course-pdf/canva-pdf-page-03.jpg" alt="Canva Crash Course PDF page 3"><span>Page 3</span></div>
-        <div class="pdf-page"><img src="assets/canva-crash-course-pdf/canva-pdf-page-04.jpg" alt="Canva Crash Course PDF page 4"><span>Page 4</span></div>
-        <div class="pdf-page"><img src="assets/canva-crash-course-pdf/canva-pdf-page-05.jpg" alt="Canva Crash Course PDF page 5"><span>Page 5</span></div>
-        <div class="pdf-page"><img src="assets/canva-crash-course-pdf/canva-pdf-page-06.jpg" alt="Canva Crash Course PDF page 6"><span>Page 6</span></div>
-        <div class="pdf-page"><img src="assets/canva-crash-course-pdf/canva-pdf-page-07.jpg" alt="Canva Crash Course PDF page 7"><span>Page 7</span></div>
-        <div class="pdf-page"><img src="assets/canva-crash-course-pdf/canva-pdf-page-08.jpg" alt="Canva Crash Course PDF page 8"><span>Page 8</span></div>
-        <div class="pdf-page"><img src="assets/canva-crash-course-pdf/canva-pdf-page-09.jpg" alt="Canva Crash Course PDF page 9"><span>Page 9</span></div>
-        <div class="pdf-page"><img src="assets/canva-crash-course-pdf/canva-pdf-page-10.jpg" alt="Canva Crash Course PDF page 10"><span>Page 10</span></div>
-        <div class="pdf-page"><img src="assets/canva-crash-course-pdf/canva-pdf-page-11.jpg" alt="Canva Crash Course PDF page 11"><span>Page 11</span></div>
-        <div class="pdf-page"><img src="assets/canva-crash-course-pdf/canva-pdf-page-12.jpg" alt="Canva Crash Course PDF page 12"><span>Page 12</span></div>
-        <div class="pdf-page"><img src="assets/canva-crash-course-pdf/canva-pdf-page-13.jpg" alt="Canva Crash Course PDF page 13"><span>Page 13</span></div>
-        <div class="pdf-page"><img src="assets/canva-crash-course-pdf/canva-pdf-page-14.jpg" alt="Canva Crash Course PDF page 14"><span>Page 14</span></div>
-        <div class="pdf-page"><img src="assets/canva-crash-course-pdf/canva-pdf-page-15.jpg" alt="Canva Crash Course PDF page 15"><span>Page 15</span></div>
-        <div class="pdf-page"><img src="assets/canva-crash-course-pdf/canva-pdf-page-16.jpg" alt="Canva Crash Course PDF page 16"><span>Page 16</span></div>
-        <div class="pdf-page"><img src="assets/canva-crash-course-pdf/canva-pdf-page-17.jpg" alt="Canva Crash Course PDF page 17"><span>Page 17</span></div>
-        <div class="pdf-page"><img src="assets/canva-crash-course-pdf/canva-pdf-page-18.jpg" alt="Canva Crash Course PDF page 18"><span>Page 18</span></div>
-        <div class="pdf-page"><img src="assets/canva-crash-course-pdf/canva-pdf-page-19.jpg" alt="Canva Crash Course PDF page 19"><span>Page 19</span></div>
-        <div class="pdf-page"><img src="assets/canva-crash-course-pdf/canva-pdf-page-20.jpg" alt="Canva Crash Course PDF page 20"><span>Page 20</span></div>
-        <div class="pdf-page"><img src="assets/canva-crash-course-pdf/canva-pdf-page-21.jpg" alt="Canva Crash Course PDF page 21"><span>Page 21</span></div>
-        <div class="pdf-page"><img src="assets/canva-crash-course-pdf/canva-pdf-page-22.jpg" alt="Canva Crash Course PDF page 22"><span>Page 22</span></div>
+        <div class="card">
+          <h3>Store Rule</h3>
+          <p>People should instantly understand who the store is for, what the main offer is, and what action to take next.</p>
+          <div class="quote">Simple stores usually convert better than cluttered stores because buyers do not have to think so hard.</div>
+        </div>
       </div>
     </section>
 
@@ -455,28 +406,28 @@
       <h2>What Students Will Learn</h2>
       <div class="grid-3">
         <div class="card">
-          <h3>Canva Basics</h3>
-          <p>Students learn how to start designs, use templates, edit text, swap images, organize pages, and download files.</p>
+          <h3>Platform Choice</h3>
+          <p>Students learn how to choose between Stan, Beacons, Shopify, and a link-in-bio setup based on their offer type.</p>
         </div>
         <div class="card">
-          <h3>Brand Setup</h3>
-          <p>Students learn how to choose brand colors, fonts, logos, and repeatable design styles for consistency.</p>
+          <h3>Payment Setup</h3>
+          <p>Students learn how Stripe, PayPal, bank accounts, payouts, currency, and payment options fit into the backend.</p>
         </div>
         <div class="card">
-          <h3>Social Content</h3>
-          <p>Students learn how to create posts, carousels, story graphics, YouTube thumbnails, and product promo graphics.</p>
+          <h3>Product Pages</h3>
+          <p>Students learn how to write clear titles, descriptions, prices, calls-to-action, and post-purchase instructions.</p>
         </div>
         <div class="card">
-          <h3>Digital Products</h3>
-          <p>Students learn how to create checklists, planners, ebooks, worksheets, prompt packs, and printable resources.</p>
+          <h3>Delivery Flow</h3>
+          <p>Students learn how buyers access files, links, courses, coaching, custom products, and confirmation emails.</p>
         </div>
         <div class="card">
-          <h3>Mockups</h3>
-          <p>Students learn how to present digital products visually so buyers understand what they are getting.</p>
+          <h3>Store Organization</h3>
+          <p>Students learn how to put the main offer first, avoid too many options, and create a clean buying path.</p>
         </div>
         <div class="card">
-          <h3>Exporting</h3>
-          <p>Students learn when to use PNG, JPG, PDF, transparent background, and Canva template links.</p>
+          <h3>Performance Tracking</h3>
+          <p>Students learn how to watch clicks, views, sales, placement, price, and description changes.</p>
         </div>
       </div>
     </section>
@@ -487,218 +438,319 @@
       <div class="grid-2">
         <div class="lesson-card">
           <span class="pill">Lesson 1</span>
-          <h3>Canva Basics and Dashboard Tour</h3>
-          <p>Students should learn where to start before designing. Canva can feel overwhelming because there are so many templates, tools, and file types. The first goal is confidence.</p>
+          <h3>The Creator Store Backend</h3>
+          <p>The front of the store should look simple, but the backend needs structure. Students should know where the buyer goes, how the payment is processed, how the product is delivered, and how support is handled.</p>
+          <p>Think of the backend as the invisible system that keeps the business from feeling messy. A buyer should never have to wonder if the payment worked, where the product is, who to contact, or what happens next.</p>
           <ul>
-            <li>Create a design from a template or custom size.</li>
-            <li>Understand the editor: pages, toolbar, side panel, elements, uploads, text, and design tabs.</li>
-            <li>Use folders to organize brand assets, products, social posts, and client work.</li>
-            <li>Rename designs clearly so they are easy to find later.</li>
-            <li>Duplicate designs instead of rebuilding from scratch.</li>
+            <li>Store page or link-in-bio page.</li>
+            <li>Offer page or checkout page.</li>
+            <li>Payment processor.</li>
+            <li>Delivery method.</li>
+            <li>Support email or contact path.</li>
+            <li>Analytics and sales tracking.</li>
           </ul>
-          <div class="quote">Student task: create one Instagram post from a template and rename it with a clear file name.</div>
+          <div class="quote">Student task: draw your buyer path from social post to store click, product page, checkout, delivery email, and support contact.</div>
         </div>
 
         <div class="lesson-card">
           <span class="pill">Lesson 2</span>
-          <h3>Brand Kit and Visual Consistency</h3>
-          <p>Canva's Brand Kit helps keep logos, fonts, colors, imagery, and brand assets in one place for consistent designs. Students can also create a manual brand guide if they are using a free account.</p>
+          <h3>Choosing the Right Store Platform</h3>
+          <p>Students should choose a platform based on what they are selling, not just what is trending.</p>
+          <p>A beginner selling one digital guide does not need the same setup as someone selling 30 physical products. The best platform is the one that makes the next sale easier without adding unnecessary work.</p>
           <ul>
-            <li>Choose 2 to 4 brand colors.</li>
-            <li>Choose 1 headline font and 1 body font.</li>
-            <li>Upload logos, icons, photos, and product images.</li>
-            <li>Create a simple brand board with colors, font names, and design examples.</li>
-            <li>Use the same spacing, buttons, and title styles across content.</li>
+            <li>Use Stan for direct-selling digital products, coaching, courses, and services.</li>
+            <li>Use Beacons when you need a simple bio hub with links, resources, affiliate links, and digital offers.</li>
+            <li>Use Shopify when you need a fuller ecommerce store with collections, products, shipping, and more store control.</li>
+            <li>Use a link hub only when the buyer needs simple navigation, not a full sales funnel.</li>
           </ul>
-          <div class="quote">Design rule: consistency builds trust faster than constantly changing styles.</div>
+          <div class="quote">Decision shortcut: if your store needs checkout plus a simple offer page, start with Stan or Beacons. If you need product collections, shipping, inventory, and a full storefront, consider Shopify.</div>
         </div>
 
         <div class="lesson-card">
           <span class="pill">Lesson 3</span>
-          <h3>Editing Templates Without Making Them Messy</h3>
-          <p>Templates are a shortcut, but students need to edit with intention. A good template can become confusing if too many fonts, colors, stickers, and text blocks are added.</p>
+          <h3>Adding Products to Your Store</h3>
+          <p>Every offer should be clear. People should understand what they are buying before they click checkout.</p>
+          <p>The product page should answer the buyer's silent questions: What is this? Is it for me? What do I get? How fast do I get it? What do I do after purchase?</p>
           <ul>
-            <li>Start with a template close to the final goal.</li>
-            <li>Replace the text before changing decoration.</li>
-            <li>Keep margins and spacing clean.</li>
-            <li>Use no more than 2 main fonts in one design.</li>
-            <li>Use high contrast so text is readable.</li>
-            <li>Delete elements that do not support the message.</li>
+            <li>Clear title.</li>
+            <li>Short description.</li>
+            <li>Visible price.</li>
+            <li>Simple call-to-action.</li>
+            <li>Product image or thumbnail.</li>
+            <li>What is included.</li>
+            <li>How it is delivered.</li>
           </ul>
-          <div class="quote">Template rule: customize the message first, then the style.</div>
+          <div class="quote">Example: "Creator Bio Template Pack" is clearer than "Glow Up Your Page." Creative names can work, but the buyer still needs to understand the offer fast.</div>
         </div>
 
         <div class="lesson-card">
           <span class="pill">Lesson 4</span>
-          <h3>Social Media Graphics</h3>
-          <p>Students can use Canva to create feed posts, carousels, quote graphics, story slides, live reminders, promo graphics, and thumbnails. The content should be easy to read on a phone.</p>
+          <h3>Connecting Payments</h3>
+          <p>Payments are not just a button. Students need to know what processor they are using, how payouts happen, and what customers will see at checkout.</p>
+          <p>Before promoting, students should confirm that payments are connected, account verification is complete, payout details are correct, and the checkout page actually lets a buyer complete the order.</p>
           <ul>
-            <li>Use large, clear headlines.</li>
-            <li>Put one main idea per slide.</li>
-            <li>Keep text short for feed posts and story graphics.</li>
-            <li>Use carousel slides to teach a step-by-step idea.</li>
-            <li>Use brand colors and repeated layouts to batch faster.</li>
-            <li>Design with mobile readability first.</li>
+            <li>Stripe usually handles credit cards, debit cards, Apple Pay, and Google Pay where available.</li>
+            <li>PayPal allows customers to pay with PayPal and may support Pay Later options where available.</li>
+            <li>Stan supports Stripe and PayPal, but Stan's Stripe setup uses a Stan-managed custom Stripe flow.</li>
+            <li>Beacons supports Stripe and PayPal for store payments.</li>
+            <li>Students should verify their account, bank details, business details, and support contact information.</li>
           </ul>
-          <div class="quote">Student task: create a 5-slide carousel from one tip in your niche.</div>
+          <div class="quote">Student task: complete a test purchase or checkout preview before announcing the store publicly.</div>
         </div>
 
         <div class="lesson-card">
           <span class="pill">Lesson 5</span>
-          <h3>Digital Products and Lead Magnets</h3>
-          <p>Canva is useful for creating beginner-friendly digital products. Students can turn their knowledge into simple resources people can download and use.</p>
+          <h3>Digital Product Delivery</h3>
+          <p>Students need a reliable delivery process so buyers get what they paid for and support issues stay low.</p>
+          <p>Delivery is part of the customer experience. If the buyer pays and cannot find the file, the seller may get DMs, refund requests, bad reviews, or chargebacks. The smoother the delivery, the more professional the store feels.</p>
           <ul>
-            <li>Checklists.</li>
-            <li>Workbooks.</li>
-            <li>Planners.</li>
-            <li>Prompt packs.</li>
-            <li>Mini ebooks.</li>
-            <li>Templates.</li>
-            <li>Printable trackers.</li>
+            <li>Stan buyers can access digital products from the confirmation page and confirmation email.</li>
+            <li>Beacons buyers can access digital products from the success screen and confirmation email.</li>
+            <li>Beacons says access links are active for 7 days after purchase, so creators may need to resend order emails when needed.</li>
+            <li>Students should test checkout, delivery email, download links, and support links before launching.</li>
           </ul>
-          <div class="quote">Product rule: the resource should help the buyer complete one clear task, not overwhelm them with everything you know.</div>
+          <div class="quote">Best practice: keep a backup folder with product files, sales page screenshots, refund policy, and buyer support instructions.</div>
         </div>
 
         <div class="lesson-card">
           <span class="pill">Lesson 6</span>
-          <h3>Product Covers and Mockups</h3>
-          <p>Mockups help buyers understand what the product is. A PDF, checklist, or template pack feels more real when it has a cover, preview image, or product display graphic.</p>
+          <h3>Selling Custom AI Content</h3>
+          <p>Custom AI content can be sold through a creator store, but the offer needs clear expectations.</p>
+          <p>This type of offer should be treated like a service, not just a download. Students need an intake process, turnaround time, revision rules, and delivery instructions so buyers know exactly what happens after checkout.</p>
           <ul>
-            <li>Create a front cover for guides and workbooks.</li>
-            <li>Use mockup frames for phones, laptops, tablets, books, and pages.</li>
-            <li>Show what is inside without giving away everything.</li>
-            <li>Use mockups on store pages, sales graphics, and promo posts.</li>
-            <li>Keep mockups honest: do not make the product look bigger than it is.</li>
+            <li>AI portraits.</li>
+            <li>AI scene images.</li>
+            <li>Custom AI videos.</li>
+            <li>Personalized creative content.</li>
+            <li>State turnaround time, revision limit, what the buyer must submit, and delivery method.</li>
           </ul>
-          <div class="quote">Student task: create one product cover and one mockup graphic for a digital download.</div>
+          <div class="quote">Example intake fields: name, email, reference photo, preferred style, colors, text to include, usage goal, and any details to avoid.</div>
         </div>
 
         <div class="lesson-card">
           <span class="pill">Lesson 7</span>
-          <h3>Canva AI and Magic Studio</h3>
-          <p>Canva Magic Studio includes AI tools that can help generate designs, images, text, and visual ideas. Students should use AI as a creative assistant, then edit the output to match the brand and message.</p>
+          <h3>Connecting Your Store to Social Media</h3>
+          <p>Content should send people to the store naturally. The store is where attention turns into action.</p>
+          <p>The content should create the reason to click. A store link by itself does not sell much if the content never explains the problem, the outcome, or the next step.</p>
           <ul>
-            <li>Use AI to brainstorm design ideas.</li>
-            <li>Use Magic Write to draft text ideas, captions, and product descriptions.</li>
-            <li>Use AI image tools when a unique visual is needed.</li>
-            <li>Review every AI-generated design for accuracy and brand fit.</li>
-            <li>Do not use AI to create fake proof, fake testimonials, or misleading product examples.</li>
+            <li>Add the store link in your bio.</li>
+            <li>Mention the offer in videos.</li>
+            <li>Mention the store during live streams.</li>
+            <li>Use clear calls-to-action like: "Link in my bio if you want the full guide."</li>
+            <li>Match the product at the top of the store to the content you are promoting that week.</li>
           </ul>
-          <div class="quote">AI rule: generate faster, but still edit like a human with taste and honesty.</div>
+          <div class="quote">Content formula: teach one useful thing, name the bigger problem, then invite viewers to the store for the full resource.</div>
         </div>
 
         <div class="lesson-card">
           <span class="pill">Lesson 8</span>
-          <h3>Exporting the Right File Type</h3>
-          <p>Students should download the right file for the job. The wrong export can make designs blurry, too large, hard to edit, or unusable for buyers.</p>
+          <h3>Tracking and Improving Store Performance</h3>
+          <p>Students should pay attention to their data and make small improvements instead of rebuilding everything at once.</p>
+          <p>Store data tells students where the problem might be. If views are low, the content may not be sending enough traffic. If clicks are high but sales are low, the product page, price, offer, or trust signals may need work.</p>
           <ul>
-            <li>PNG: best for crisp social graphics and images with text.</li>
-            <li>JPG: good for photos and smaller image files.</li>
-            <li>PDF Standard: good for digital downloads and email delivery.</li>
-            <li>PDF Print: better for high-quality print files.</li>
-            <li>Transparent PNG: useful for logos, stickers, and overlays when available.</li>
-            <li>Canva template link: use when buyers need to edit their own copy.</li>
+            <li>Track clicks.</li>
+            <li>Track views.</li>
+            <li>Track sales.</li>
+            <li>Move the main offer higher if it gets attention but not clicks.</li>
+            <li>Change the title or description if people do not understand the offer.</li>
+            <li>Adjust the price or bonus if clicks are strong but sales are low.</li>
           </ul>
-          <div class="quote">Student task: export the same design as PNG and PDF, then compare when each one should be used.</div>
-        </div>
-
-        <div class="lesson-card">
-          <span class="pill">Lesson 9</span>
-          <h3>Batch Creating Content</h3>
-          <p>Batching helps students create more content in less time. Instead of designing every post from zero, students should build repeatable layouts.</p>
-          <ul>
-            <li>Create 3 to 5 reusable post templates.</li>
-            <li>Create a carousel template.</li>
-            <li>Create a product promo template.</li>
-            <li>Create a quote or tip graphic template.</li>
-            <li>Duplicate, rewrite, and adjust instead of rebuilding every time.</li>
-            <li>Save finished graphics in organized folders.</li>
-          </ul>
-          <div class="quote">Batching system: one hour to create templates, one hour to fill them with weekly content.</div>
-        </div>
-
-        <div class="lesson-card">
-          <span class="pill">Lesson 10</span>
-          <h3>Design Review Before Publishing</h3>
-          <p>Before posting or selling a Canva design, students should check clarity, readability, spelling, spacing, and file type. Small mistakes can make a strong product feel rushed.</p>
-          <ul>
-            <li>Can the headline be read on a phone?</li>
-            <li>Is the text too crowded?</li>
-            <li>Are the colors consistent?</li>
-            <li>Are there typos?</li>
-            <li>Does the design match the offer?</li>
-            <li>Is the file exported correctly?</li>
-            <li>Did the student test the download link?</li>
-          </ul>
-          <div class="quote">Final rule: if the buyer cannot understand it in seconds, simplify the design.</div>
+          <div class="quote">Simple test: change one thing at a time, then watch what happens for 7 days before making another change.</div>
         </div>
       </div>
     </section>
 
     <section class="section">
-      <div class="section-label">Design Rules</div>
-      <h2>Simple Design Rules for Beginners</h2>
+      <div class="section-label">Platform Deep Dive</div>
+      <h2>Stan vs. Beacons vs. Shopify</h2>
       <table>
         <thead>
           <tr>
-            <th>Rule</th>
-            <th>Why It Matters</th>
+            <th>Platform</th>
+            <th>Best For</th>
+            <th>Watch For</th>
           </tr>
         </thead>
         <tbody>
-          <tr><td>Use fewer fonts.</td><td>Too many fonts make designs look messy and harder to read.</td></tr>
-          <tr><td>Use contrast.</td><td>Text should stand out clearly from the background.</td></tr>
-          <tr><td>Leave space.</td><td>White space makes designs feel cleaner and more professional.</td></tr>
-          <tr><td>Align elements.</td><td>Aligned text and images make designs feel intentional.</td></tr>
-          <tr><td>Repeat styles.</td><td>Repeated colors, fonts, and layouts create brand consistency.</td></tr>
-          <tr><td>Design for mobile first.</td><td>Most social content is viewed on small screens.</td></tr>
+          <tr>
+            <td>Stan Store</td>
+            <td>Digital products, coaching, courses, services, funnels, and clean sales pages.</td>
+            <td>Requires payment processor setup. At least one product/service and a social link or contact info may be needed before processor verification.</td>
+          </tr>
+          <tr>
+            <td>Beacons</td>
+            <td>Bio link hub, resource lists, affiliate links, digital offers, and fast creator storefronts.</td>
+            <td>Beacons is strong for link-in-bio simplicity. For direct product sales, students still need product files/links, payment setup, and clear checkout settings.</td>
+          </tr>
+          <tr>
+            <td>Shopify</td>
+            <td>Full ecommerce stores, physical products, product collections, shipping workflows, and brand storefronts.</td>
+            <td>More powerful, but more setup. Students need product descriptions, pricing, policies, payments, taxes, shipping, and theme organization.</td>
+          </tr>
         </tbody>
       </table>
     </section>
 
     <section class="section">
-      <div class="section-label">Templates</div>
-      <h2>Student Project Ideas</h2>
-      <div class="grid-3">
-        <div class="template-card"><h3>Social Pack</h3><p>Create 10 branded feed posts, 5 story slides, and 3 promo graphics.</p></div>
-        <div class="template-card"><h3>Lead Magnet</h3><p>Create a 3-page checklist or mini guide that can be used for email list building.</p></div>
-        <div class="template-card"><h3>Digital Product</h3><p>Create a simple workbook, prompt pack, planner, or printable tracker.</p></div>
-        <div class="template-card"><h3>Product Mockups</h3><p>Create 3 mockup graphics for a store page and social media promotion.</p></div>
-        <div class="template-card"><h3>Brand Board</h3><p>Create one page with colors, fonts, logo, photo style, and sample graphics.</p></div>
-        <div class="template-card"><h3>Carousel</h3><p>Create a 5 to 7 slide carousel that teaches one beginner-friendly concept.</p></div>
+      <div class="section-label">Stan Store</div>
+      <h2>Stan Store Setup Notes</h2>
+      <div class="grid-2">
+        <div class="platform-card">
+          <h3>When to Use Stan</h3>
+          <p>Stan Store works well for direct selling.</p>
+          <ul>
+            <li>Digital products.</li>
+            <li>Coaching.</li>
+            <li>Courses.</li>
+            <li>Services.</li>
+            <li>Clean sales pages.</li>
+          </ul>
+        </div>
+        <div class="platform-card">
+          <h3>Setup Reminders</h3>
+          <ul>
+            <li>Stan supports Stripe and PayPal.</li>
+            <li>Stan's Stripe setup creates a Stan-managed custom Stripe account.</li>
+            <li>Stan says PayPal setup requires a PayPal Business account.</li>
+            <li>If PayPal and Stripe are both connected, customers can see both checkout options.</li>
+            <li>If the store says "Sold Out," Stan says the creator may need to connect a payment processor.</li>
+          </ul>
+        </div>
+      </div>
+      <div class="quote">Your existing resource: <a href="https://youtu.be/aS11ZfwG5Wk?si=kq9hDNkSYEHYl04W">How to set up a Stan Store</a> and affiliate link: <a href="https://join.stan.store/AlliePonvelle">join.stan.store/AlliePonvelle</a></div>
+    </section>
+
+    <section class="section">
+      <div class="section-label">Beacons Store</div>
+      <h2>Beacons Store Setup Notes</h2>
+      <div class="grid-2">
+        <div class="platform-card">
+          <h3>When to Use Beacons</h3>
+          <p>Beacons works great as a bio link hub and simple creator storefront.</p>
+          <ul>
+            <li>Resource lists.</li>
+            <li>Affiliate links.</li>
+            <li>Digital offers.</li>
+            <li>Quick access pages.</li>
+            <li>Simple creator setups.</li>
+          </ul>
+        </div>
+        <div class="platform-card">
+          <h3>Setup Reminders</h3>
+          <ul>
+            <li>Beacons supports Stripe and PayPal for store payments.</li>
+            <li>Stripe can support cards, Apple Pay, and Google Pay where available.</li>
+            <li>Beacons product access can happen through the success screen and confirmation email.</li>
+            <li>Beacons says digital product access links are active for 7 days after purchase.</li>
+            <li>Beacons allows digital product files or URL delivery.</li>
+          </ul>
+        </div>
+      </div>
+      <div class="quote">Your existing resource: <a href="https://youtube.com/playlist?list=PLdMWlA48UlTQn156o6czhjIGzPH8lMVPu&si=LGWvPPLyBfKfIkPu">Beacons setup playlist</a> and affiliate link: <a href="https://beacons.ai/signup?c=allieponvelle">beacons.ai/signup?c=allieponvelle</a></div>
+    </section>
+
+    <section class="section">
+      <div class="section-label">Store Layout</div>
+      <h2>Organizing Your Store</h2>
+      <div class="grid-2">
+        <div class="template-card">
+          <h3>Best Layout</h3>
+          <ol>
+            <li>Main offer first.</li>
+            <li>Most important products at the top.</li>
+            <li>Free lead magnet or starter resource near the top if list building matters.</li>
+            <li>Affiliate links below core offers.</li>
+            <li>Do not overload the page.</li>
+          </ol>
+        </div>
+        <div class="card">
+          <h3>Decision Rule</h3>
+          <p>If the buyer has to scroll through too many unrelated offers, they may leave without buying. Keep the page focused on the next action you want them to take.</p>
+          <div class="quote">Too many options can confuse buyers. A clear first offer creates a cleaner path to the sale.</div>
+        </div>
       </div>
     </section>
 
     <section class="section">
-      <div class="section-label">Checklists</div>
-      <h2>Student Downloads to Include</h2>
+      <div class="section-label">Promotion</div>
+      <h2>Promoting Your Store Through Content</h2>
+      <p>Your content should naturally lead to your store. Give value first, then invite viewers to the next step.</p>
+      <div class="grid-3">
+        <div class="template-card">
+          <h3>Simple CTA</h3>
+          <pre>Link in my bio if you want the full guide.</pre>
+        </div>
+        <div class="template-card">
+          <h3>Problem-Solution CTA</h3>
+          <pre>If this is what you are stuck on, I made a step-by-step resource for you. It is linked in my store.</pre>
+        </div>
+        <div class="template-card">
+          <h3>Live Stream CTA</h3>
+          <pre>If you want the checklist I am talking about, go to the link in my bio and tap the first product.</pre>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section-label">Backend Trust</div>
+      <h2>Before You Launch Checklist</h2>
       <div class="grid-2">
         <div class="template-card">
-          <h3>Canva Design Checklist</h3>
+          <h3>Store Trust Checklist</h3>
           <ol>
-            <li>Design title is clear.</li>
-            <li>Headline is readable on mobile.</li>
-            <li>Only 1 to 2 fonts are used.</li>
-            <li>Colors match the brand.</li>
-            <li>Text has enough contrast.</li>
-            <li>Spacing is clean.</li>
-            <li>Images are not blurry.</li>
-            <li>File type is correct.</li>
-            <li>Links and downloads are tested.</li>
+            <li>Clear bio or store intro.</li>
+            <li>At least one support contact method.</li>
+            <li>Payment processor connected and verified.</li>
+            <li>Main offer tested from checkout to delivery.</li>
+            <li>Refund policy visible before purchase.</li>
+            <li>Product delivery email checked.</li>
+            <li>Store link added to social bio.</li>
+            <li>Product title and button text are easy to understand.</li>
           </ol>
         </div>
         <div class="template-card">
-          <h3>Digital Product Checklist</h3>
+          <h3>Product Page Checklist</h3>
           <ol>
-            <li>Product solves one clear problem.</li>
-            <li>Cover page is clean and branded.</li>
-            <li>Inside pages are easy to read.</li>
-            <li>Instructions are clear.</li>
-            <li>File is exported as PDF when needed.</li>
-            <li>Mockup graphic is created.</li>
-            <li>Store image is created.</li>
-            <li>Buyer access or template link is tested.</li>
+            <li>Title says what the product is.</li>
+            <li>Description explains who it helps.</li>
+            <li>Price is visible.</li>
+            <li>CTA tells the buyer what to do.</li>
+            <li>Includes what the buyer receives.</li>
+            <li>Includes how and when they receive it.</li>
+            <li>Includes refund/access notes.</li>
+            <li>Includes support contact.</li>
           </ol>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section-label">Templates</div>
+      <h2>Copy and Paste Swipe File</h2>
+      <div class="grid-2">
+        <div class="template-card">
+          <h3>Store Bio</h3>
+          <pre>I help [audience] [result] with simple digital tools, creator resources, and step-by-step guides.</pre>
+        </div>
+        <div class="template-card">
+          <h3>Digital Product Description</h3>
+          <pre>This [guide/template/checklist] helps you [specific result]. Inside, you will get [main items included]. It is best for [audience] who want [clear outcome].</pre>
+        </div>
+        <div class="template-card">
+          <h3>Custom AI Content Offer</h3>
+          <pre>Get a custom [AI portrait / AI scene / AI video] created for your brand. After purchase, you will receive instructions for submitting your details. Delivery time: [timeframe]. Includes [number] revision.</pre>
+        </div>
+        <div class="template-card">
+          <h3>Post-Purchase Email</h3>
+          <pre>Thank you for your purchase. Your access link is below. Please save this email. If you have trouble accessing your product, contact [support email] and include your order email.</pre>
+        </div>
+        <div class="template-card">
+          <h3>Refund Policy</h3>
+          <pre>Because this is a digital product with instant access, all sales are final once the product has been delivered or accessed. If you have trouble accessing your purchase, contact [support email] within 7 days.</pre>
+        </div>
+        <div class="template-card">
+          <h3>Store Link CTA</h3>
+          <pre>Go to the link in my bio and tap [product name] if you want the full step-by-step resource.</pre>
         </div>
       </div>
     </section>
@@ -708,28 +760,28 @@
       <h2>What Students Should Avoid</h2>
       <div class="grid-3">
         <div class="warning-card">
-          <h3>Too Much Text</h3>
-          <p>If a social graphic looks like a paragraph, turn it into a carousel or simplify the message.</p>
+          <h3>Too Many Offers</h3>
+          <p>New buyers should not have to sort through everything. Put the main offer first and keep the page focused.</p>
         </div>
         <div class="warning-card">
-          <h3>Unreadable Fonts</h3>
-          <p>Pretty fonts are not useful if people cannot read them quickly on a phone.</p>
+          <h3>Payments Not Verified</h3>
+          <p>A store is not ready if the payment processor is incomplete, unverified, or not connected.</p>
         </div>
         <div class="warning-card">
-          <h3>No Brand Consistency</h3>
-          <p>Changing colors and fonts every time makes the brand harder to recognize.</p>
+          <h3>No Delivery Test</h3>
+          <p>Students should test the buying process before sending traffic. Broken access links create refunds and disputes.</p>
         </div>
         <div class="warning-card">
-          <h3>Wrong File Type</h3>
-          <p>A buyer who needs an editable template should not receive only a flat PNG or JPG.</p>
+          <h3>No Support Contact</h3>
+          <p>If buyers cannot get help, they may ask their bank or payment processor instead.</p>
         </div>
         <div class="warning-card">
-          <h3>Fake Mockups</h3>
-          <p>Do not make a product look bigger, deeper, or more complete than it really is.</p>
+          <h3>Vague Product Titles</h3>
+          <p>Creative titles are fine, but buyers should still know what they are getting.</p>
         </div>
         <div class="warning-card">
-          <h3>Not Testing Links</h3>
-          <p>Always test PDF links, Canva template links, downloads, and sharing permissions before selling.</p>
+          <h3>Ignoring Analytics</h3>
+          <p>If people click but do not buy, the offer page, price, product placement, or description may need work.</p>
         </div>
       </div>
     </section>
@@ -740,23 +792,23 @@
       <div class="grid-2">
         <div class="card">
           <h3>Question 1</h3>
-          <p>What is the best file type for most social graphics with text?</p>
-          <div class="quote">Answer: PNG, because it usually keeps text and graphics crisp.</div>
+          <p>What should go first on a creator store?</p>
+          <div class="quote">Answer: The main offer or the most important action you want visitors to take.</div>
         </div>
         <div class="card">
           <h3>Question 2</h3>
-          <p>What should students use if buyers need to edit the design themselves?</p>
-          <div class="quote">Answer: A Canva template link with the correct sharing permissions.</div>
+          <p>What should every product page include?</p>
+          <div class="quote">Answer: Clear title, short description, visible price, simple CTA, what is included, delivery method, and support path.</div>
         </div>
         <div class="card">
           <h3>Question 3</h3>
-          <p>Why are mockups helpful?</p>
-          <div class="quote">Answer: They help buyers understand what the product looks like and what they receive.</div>
+          <p>Why should students test checkout before promoting?</p>
+          <div class="quote">Answer: To make sure payment, delivery, confirmation emails, and product access work before buyers arrive.</div>
         </div>
         <div class="card">
           <h3>Question 4</h3>
-          <p>What should students do before posting or selling a design?</p>
-          <div class="quote">Answer: Review readability, spelling, spacing, brand consistency, export type, and links.</div>
+          <p>When should a student consider Shopify instead of a simple creator store?</p>
+          <div class="quote">Answer: When they need a fuller ecommerce setup with product collections, shipping, inventory, and more store control.</div>
         </div>
       </div>
     </section>
@@ -766,20 +818,23 @@
       <h2>Research Links</h2>
       <p>Use these as platform references when recording walkthroughs or updating student resources.</p>
       <ul>
-        <li><a href="https://www.canva.com/learn/how-to-canva-beginners-guide/">Canva: Beginner's Guide</a></li>
-        <li><a href="https://www.canva.com/learn/a-step-by-step-guide-to-designing-from-scratch/">Canva: Designing From Scratch</a></li>
-        <li><a href="https://www.canva.com/pro/brand-kit/">Canva: Brand Kit</a></li>
-        <li><a href="https://www.canva.com/business/features/brand/">Canva: Brand Features</a></li>
-        <li><a href="https://www.canva.com/magic/">Canva: Magic Studio</a></li>
-        <li><a href="https://www.canva.com/newsroom/news/magic-studio/">Canva: Magic Studio Overview</a></li>
+        <li><a href="https://help.stan.store/article/258-how-to-integrate-stan-with-stripe-or-paypal">Stan Store: Integrate Stan with Stripe or PayPal</a></li>
+        <li><a href="https://help.stan.store/article/7-how-to-connect-stan-with-stripe">Stan Store: Connect Stan with Stripe</a></li>
+        <li><a href="https://help.stan.store/article/53-how-to-connect-stan-with-paypal">Stan Store: Connect Stan with PayPal</a></li>
+        <li><a href="https://help.stan.store/article/14-sell-a-digital-download-product">Stan Store: Sell a Digital Download Product</a></li>
+        <li><a href="https://help.stan.store/article/74-how-will-my-customer-download-my-digital-product">Stan Store: How Customers Access Digital Products</a></li>
+        <li><a href="https://help.beacons.ai/en/articles/4699009">Beacons: Store Overview</a></li>
+        <li><a href="https://help.beacons.ai/en/articles/4698049">Beacons: Setting Up Payments and Payouts</a></li>
+        <li><a href="https://help.beacons.ai/en/articles/4699393">Beacons: Set Up Your Store in Minutes</a></li>
+        <li><a href="https://help.beacons.ai/en/articles/4699713">Beacons: How Customers Access Digital Products</a></li>
+        <li><a href="https://help.shopify.com/en/manual/products">Shopify: Products Help Center</a></li>
       </ul>
     </section>
 
     <section class="cta">
-      <h2>Create Faster, Design Cleaner</h2>
-      <p>Canva helps students turn ideas into real assets. Start with simple layouts, stay consistent, make the message clear, and export the right file for the job.</p>
+      <h2>Simple Store, Strong Backend</h2>
+      <p>Your creator store should feel simple to buyers, but the backend should be clear, tested, and ready before traffic starts coming in.</p>
     </section>
   </div>
 </body>
 </html>
-
